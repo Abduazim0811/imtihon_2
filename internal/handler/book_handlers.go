@@ -27,6 +27,7 @@ func (h *BookHandler) CreateBookHandler(w http.ResponseWriter, r *http.Request) 
 	}
 	createdBook, err := h.Storage.CreateBook(book)
 	if err != nil {
+		fmt.Println(err)
 		http.Error(w, "Failed to create book", http.StatusInternalServerError)
 		return
 	}
