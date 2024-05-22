@@ -1,0 +1,9 @@
+server:
+  host: localhost
+  port: '9001'
+postgres:
+  host: localhost
+  user: postgres
+  password: 'Abdu0811'
+  port: '5432'
+  dbname: 'bookstore_n9'
